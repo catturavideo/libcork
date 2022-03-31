@@ -89,11 +89,11 @@ if(NOT CMAKE_INSTALL_LIBDIR)
 endif(NOT CMAKE_INSTALL_LIBDIR)
 
 if(CMAKE_C_COMPILER_ID STREQUAL "GNU")
-    add_definitions(-Wall -Werror)
+    add_definitions(-Wall -Wextra)
 elseif(CMAKE_C_COMPILER_ID STREQUAL "Clang")
-    add_definitions(-Wall -Werror)
+    add_definitions(-Wall -Wextra)
 elseif(CMAKE_C_COMPILER_ID STREQUAL "Intel")
-    add_definitions(-Wall -Werror)
+    add_definitions(-Wall -Wextra)
 endif(CMAKE_C_COMPILER_ID STREQUAL "GNU")
 
 #-----------------------------------------------------------------------
